@@ -1,15 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, BarController } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, BarController, ChartOptions } from 'chart.js';
+// import { Bar } from 'react-chartjs-2';
 import ExcelReader from '../utils/ExcelReader';
-
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, BarController);
 
 const DailyUsageGraph: React.FC = () => {
   const chartRef = useRef<HTMLCanvasElement>(null);
   const [chartData, setChartData] = useState<any>(null);
-
 
   const handleDataLoad = (data: any) => {
     console.log('Excel Data:', data); 
@@ -38,7 +36,7 @@ const DailyUsageGraph: React.FC = () => {
     if (chartData && chartRef.current) {
       const ctx = chartRef.current.getContext('2d');
 
-      const options = {
+      const options: ChartOptions<'bar'> = {
         responsive: true,
         maintainAspectRatio: false,
         scales: {
