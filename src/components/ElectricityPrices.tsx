@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import PriceCircles from './PriceCircles';
-import { toast, ToastContainer } from 'react-toastify';
+import {  ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const ElectricityPrices: React.FC = () => {
   const [currentPrice, setCurrentPrice] = useState(Math.floor(Math.random() * (10 - 4 + 1)) + 4);  
   const [upcomingPrice, setUpcomingPrice] = useState(Math.floor(Math.random() * (10 - 4 + 1)) + 4);
 
-  const sendNotification = () => {
-    if (upcomingPrice < currentPrice) {
-      window.alert("Upcoming electricity price is lower!");
-    }
-  };
+  setCurrentPrice(currentPrice);
+  setUpcomingPrice(upcomingPrice);
+
+  // const sendNotification = () => {
+  //   if (upcomingPrice < currentPrice) {
+  //     window.alert("Upcoming electricity price is lower!");
+  //   }
+  // };
 
   useEffect(() => {
     if (upcomingPrice < currentPrice) {
