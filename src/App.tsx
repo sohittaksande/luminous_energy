@@ -5,7 +5,7 @@ import DailyUsageGraph from './components/DailyUsageGraph.tsx';
 import ElectricityPrices from './components/ElectricityPrices.tsx';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Home from './components/Home.tsx';
-import Footer from './components/Footer.tsx';
+import Footer from './components/footer.tsx';
 import SolarEnergyPrediction from './components/SolarEnergyPrediction.tsx';
 import FutureEnergyConsumption from './components/FutureEnergyConsumption.tsx';
 import WeeklyConsumption from './components/WeeklyConsumption.tsx';
