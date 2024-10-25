@@ -13,7 +13,8 @@ const weeklyStyles = {
         margin: '20px',
         textAlign: 'left',
         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
-    },
+    } as React.CSSProperties,
+    
     heading: {
         margin: 0,
         fontSize: '22px',
@@ -23,12 +24,13 @@ const weeklyStyles = {
         letterSpacing: '1px',
         paddingBottom: '5px',
         borderBottom: '2px solid #ff8c00',
-    },
+    } as React.CSSProperties,
+    
     text: {
         margin: '10px 0',
         color: '#333',
         fontSize: '18px',
-    },
+    } as React.CSSProperties,
 };
 
 const WeeklyConsumption: React.FC<WeeklyConsumptionProps> = ({ weeklyConsumption }) => {

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import * as XLSX from 'xlsx';
 
 const ExcelReader = ({ onDataLoad }: { onDataLoad: (data: any) => void }) => {

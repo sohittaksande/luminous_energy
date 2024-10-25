@@ -1,21 +1,21 @@
-
 import React from 'react';
 
 interface SolarEnergyPredictionProps {
     currentPrediction: number; 
 }
 
+// Explicitly type each style object
 const styles = {
     container: {
         backgroundColor: '#e9f7f9', 
         borderRadius: '10px',
         padding: '15px',
-        
         maxWidth: '300px',
         margin: '20px', 
         textAlign: 'left',
         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
-    },
+    } as React.CSSProperties,
+    
     heading: {
         margin: 0,
         fontSize: '22px',
@@ -25,12 +25,13 @@ const styles = {
         letterSpacing: '1px',
         paddingBottom: '5px',
         borderBottom: '2px solid #007bff',
-    },
+    } as React.CSSProperties,
+    
     text: {
         margin: '10px 0',
         color: '#333',
         fontSize: '18px',
-    },
+    } as React.CSSProperties,
 };
 
 const SolarEnergyPrediction: React.FC<SolarEnergyPredictionProps> = ({ currentPrediction }) => {
@@ -42,9 +43,4 @@ const SolarEnergyPrediction: React.FC<SolarEnergyPredictionProps> = ({ currentPr
     );
 };
 
-
-
 export default SolarEnergyPrediction;
-
-
-

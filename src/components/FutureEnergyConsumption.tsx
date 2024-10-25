@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface FutureEnergyConsumptionProps {
@@ -14,7 +13,8 @@ const FutureEnergyConsumption: React.FC<FutureEnergyConsumptionProps> = ({ futur
     );
 };
 
-const styles = {
+// Explicitly define the types of each style object as React.CSSProperties
+const styles: { [key: string]: React.CSSProperties } = {
     container: {
         backgroundColor: '#f9e9e9', 
         borderRadius: '10px',
@@ -42,4 +42,3 @@ const styles = {
 };
 
 export default FutureEnergyConsumption;
-
