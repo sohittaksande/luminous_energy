@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
           </li>
 
           <li className="nav-item active">
-            <a className="nav-link" href="http://127.0.0.1:3000/myapp/src/components/features.html" target="_blank">Features</a>
+            <a className="nav-link" href="https://sohittaksande.github.io/features_html/" target="_blank">Features</a>
           </li>
           
             <li>
