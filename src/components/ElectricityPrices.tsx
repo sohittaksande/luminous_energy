@@ -4,11 +4,14 @@ import {  ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const ElectricityPrices: React.FC = () => {
-  const [currentPrice, setCurrentPrice] = useState(Math.floor(Math.random() * (10 - 4 + 1)) + 4);  
-  const [upcomingPrice, setUpcomingPrice] = useState(Math.floor(Math.random() * (10 - 4 + 1)) + 4);
+  // const [currentPrice, setCurrentPrice] = useState(Math.floor(Math.random() * (10 - 4 + 1)) + 4);  
+  // const [upcomingPrice, setUpcomingPrice] = useState(Math.floor(Math.random() * (10 - 4 + 1)) + 4);
 
-  setCurrentPrice(currentPrice);
-  setUpcomingPrice(upcomingPrice);
+  const currentPrice = Math.floor(Math.random() * (10 - 4 + 1)) + 4;
+  const upcomingPrice = Math.floor(Math.random() * (10 - 4 + 1)) + 4;
+
+  // setCurrentPrice(Math.floor(Math.random() * (10 - 4 + 1)) + 4);
+  // setUpcomingPrice(Math.floor(Math.random() * (10 - 4 + 1)) + 4);
 
   // const sendNotification = () => {
   //   if (upcomingPrice < currentPrice) {
